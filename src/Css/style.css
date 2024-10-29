@@ -1,0 +1,345 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 3px solid green;
+}
+
+/* StockSection.css */
+.stock-section {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-top {
+  display: block;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slider-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation-arrows button {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* Basic styling for the dots */
+.slick-dots li {
+  width: 17px !important;
+  height: 16px;
+  margin: 0 10px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  content: "•";
+  opacity: 0.4;
+  color: #add8e6;
+}
+
+/* Active dot styling */
+.slick-dots li.slick-active button:before {
+  font-size: 0;
+  content: "";
+  width: 36px;
+  height: 15px;
+  background-color: #7fc241;
+  border-radius: 20px;
+  display: inline-block;
+  opacity: 1;
+}
+
+.slick-dots {
+  position: initial !important;
+  width: 13% !important;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto !important;
+}
+
+.mobile-stock-card {
+  margin: 40px 0;
+  background-color: rgb(239, 250, 255);
+  width: 92% !important;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid rgba(43, 131, 172, 0.8);
+}
+
+.mobile-stock-card img {
+  margin: 0 auto;
+}
+
+.mobile-stock-head span {
+  background: linear-gradient(to right, rgb(28, 192, 243), rgb(161, 277, 101));
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  padding: 13px 22px;
+}
+
+.mobile-stock-card p {
+  font-size: 12px;
+}
+
+.input-email {
+  position: absolute;
+  left: 1%;
+  font-size: 22px;
+  color: #9cabca;
+  padding: 0 5px;
+}
+
+.contact-input {
+  position: relative; /* Make sure the element is positioned */
+  z-index: 10; /* Adjust as needed */
+}
+.text-content {
+  position: relative; /* Make sure the element is positioned */
+  z-index: 10; /* Adjust as needed */
+}
+
+.Hero-container {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(239 250 255);
+  border-radius: 60px 60px 10px 10px;
+}
+
+.navbar-header {
+  background-color: rgb(239 250 255);
+}
+
+.bubbles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bubble1 {
+  width: 13%;
+  height: 22%;
+  top: 13%;
+  right: 3%;
+  background-image: url(../assets/hero-back.png);
+}
+
+.bubble2 {
+  width: 196px;
+  height: 167px;
+  top: 28%;
+  left: 11%;
+  background-image: url(/src/assets/herovec-1.png);
+}
+
+.bubble3 {
+  width: 100px;
+  height: 100px;
+  bottom: 15%;
+  right: 20%;
+  background: rgba(80, 200, 170, 0.1);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bubble {
+  animation: float 3s ease-in-out infinite;
+}
+
+.bubble1 {
+  animation-duration: 3s;
+}
+
+.bubble2 {
+  animation-duration: 3s;
+}
+
+.navbar-header {
+  z-index: 10;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0px;
+  line-height: 0;
+  position: absolute;
+  bottom: 1px !important;
+}
+
+.slick-next {
+  right: 40% !important;
+}
+
+.slick-prev {
+  left: 41% !important;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0px;
+  line-height: 0;
+  position: absolute;
+  bottom: 1px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 26px;
+  line-height: 1;
+  opacity: 0.75;
+  background-color: transparent;
+  color: #7fc241 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 96% !important;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-pagination-bullet {
+  background-color: blue; /* Change dot color */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: blue; /* Change arrow color */
+  z-index: 9999 !important; /* Make sure arrows appear above other elements */
+}
+
+/* Style for the pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #000 !important; /* Change bullet color as needed */
+  width: 10px !important; /* Adjust bullet size */
+  height: 10px !important; /* Adjust bullet size */
+  margin: 5px !important; /* Space between bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007aff !important; /* Active bullet color */
+}
+
+/* Position pagination dots on the right */
+.swiper-pagination {
+  position: absolute !important;
+  right: 10px !important;
+  top: 63% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  right: 0% !important;
+  left: 77% !important;
+}
+
+.changin-word {
+  display: inline-block; /* Ensure the word can be animated */
+  transition: transform 0.5s; /* Smooth transition for flip */
+}
+
+.hero-slider img {
+  width: 45% !important;
+  margin: 0 auto;
+}
+
+.hero-slider {
+  background-image: url(/src/assets/hero-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+}
+/* Keyframes for flip effect */
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+/* Apply the flip animation */
+.flip {
+  animation: flip 0.5s forwards; /* Use the flip keyframe animation */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(69 221 125) !important;
+  width: 10px !important;
+  height: 30px !important;
+  margin: 5px !important;
+  border-radius: 12px !important;
+}

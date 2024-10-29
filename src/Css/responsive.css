@@ -1,0 +1,179 @@
+/* responsive  csss //////////////////////// */
+
+/* Hide top header on mobile */
+
+@media (max-width: 1200px) {
+  .input-email {
+    position: absolute;
+    left: 1%;
+    font-size: 22px;
+    color: #9cabca;
+    padding: 0 5px;
+    top: 16% !important;
+  }
+  .slick-dots {
+    position: initial !important;
+    width: 50% !important;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+
+  .slick-next {
+    right: 40% !important;
+  }
+  .slick-prev {
+    left: 40% !important;
+  }
+
+  .bubble1 {
+    width: 13%;
+    height: 13%;
+    top: 13%;
+    right: 3%;
+    background-image: url(/src/assets/hero-back.png);
+  }
+}
+
+@media (max-width: 1024px) {
+  .bubble1 {
+    width: 12%;
+    height: 8%;
+    top: 20%;
+    right: 9%;
+    background-image: url(/src/assets/hero-back.png);
+  }
+
+  .text-content h1 {
+    font-size: 45px;
+    padding-bottom: 0;
+  }
+  .text-content h1 span {
+    font-size: 45px;
+    padding-top: 0;
+  }
+
+  .text-content p {
+    font-size: 18px;
+  }
+
+  .input-email {
+    position: absolute;
+    left: 1%;
+    font-size: 22px;
+    color: #9cabca;
+    padding: 0 5px;
+    top: 14%;
+  }
+
+  .slick-dots {
+    position: initial !important;
+    width: 50% !important;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+
+  .slick-next {
+    right: 38% !important;
+  }
+  .slick-prev {
+    left: 38% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    display: none;
+  }
+
+  .navbar-desktop {
+    display: none;
+  }
+  .hero-section {
+    padding: 40px 0;
+  }
+  .text-content h1 {
+    font-size: 35px;
+    padding-bottom: 0;
+  }
+  .text-content h1 span {
+    font-size: 35px;
+    padding-top: 0;
+  }
+  .contact-input {
+    position: relative;
+    z-index: 10;
+    gap: 15px;
+  }
+
+  .input-email {
+    position: absolute;
+    left: 1%;
+    font-size: 22px;
+    color: #9cabca;
+    padding: 0 5px;
+    top: 27% !important;
+  }
+  .bubble1 {
+    width: 13%;
+    height: 22%;
+    top: 13%;
+    display: none;
+    right: 3%;
+    background-image: url(/src/assets/hero-back.png);
+  }
+
+  .hero-slider {
+    background-image: url(/src/assets/hero-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+    padding-top: 86px;
+  }
+
+  .slick-dots {
+    position: initial !important;
+    width: 13% !important;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 26px;
+    line-height: 1;
+    opacity: 0.75;
+    background-color: transparent;
+    color: #7fc241 !important;
+    display: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .hero-slider img {
+    width: 30% !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .input-email {
+    position: absolute;
+    left: 1%;
+    font-size: 22px;
+    color: #9cabca;
+    padding: 0 5px;
+    top: 14% !important;
+  }
+}
